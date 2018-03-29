@@ -1,0 +1,16 @@
+{
+  "name": "sirikitbackend",
+  "version": "1.0.0",
+  "description": "Api for sending data from siri to backend",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pallav Trivedi",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.12"
+  }
+}
