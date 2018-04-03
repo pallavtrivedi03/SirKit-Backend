@@ -3,14 +3,25 @@
 // var mongoose = require('mongoose');
 // var TeamInfo = mongoose.model('TeamInfo');
 // var GameSchedule = mongoose.model('GameSchedule');
+var latestTimeStamp = "Some Time Stamp";
+var latestLocation = "Some Location";
 
 exports.processSaveRequest = function(req, res) {
 
    let timeStamp = req.body.timeStamp;
    let location = req.body.location;
+   latestLocation = location;
+   latestTimeStamp = latestTimeStamp;
    console.log('time is '+timeStamp);
    console.log('location is '+location);
-   res.send('Data Saved');
+   return res.json({
+                   status:403
+               });
+};
+
+exports.displayLatestData = function(req,res)
+{
+   res.send("<html><body><center><br/><br/><h1>Raw Data</h1><br/><h3>Latest Data Logged by SiriKitDemo</h3><br/><h4>Location &nbsp;&nbsp;&nbsp; "+latestLocation+"<br/>Time Stamp &nbsp;&nbsp;&nbsp; "+latestTimeStamp+"</h4></center></body></html>");
 };
 
 // function getTeamStats(req,res)

@@ -14,4 +14,6 @@ module.exports = function(app) {
   app.route('/saveData')
     .post(dataStorageController.processSaveRequest);
 
+  app.route('/displayLatestData')
+    .get(dataStorageController.displayLatestData);
 };
