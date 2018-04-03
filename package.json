@@ -4,6 +4,7 @@
   "description": "Api for sending data from siri to backend",
   "main": "Server.js",
   "scripts": {
+    "start": "node Server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pallav Trivedi",
