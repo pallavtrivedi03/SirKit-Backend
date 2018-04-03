@@ -11,7 +11,7 @@ exports.processSaveRequest = function(req, res) {
    let timeStamp = req.body.timeStamp;
    let location = req.body.location;
    latestLocation = location;
-   latestTimeStamp = latestTimeStamp;
+   latestTimeStamp = timeStamp;
    console.log('time is '+timeStamp);
    console.log('location is '+location);
    return res.json({
